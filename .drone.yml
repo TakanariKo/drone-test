@@ -1,0 +1,7 @@
+pipeline:
+  publish:
+    image: plugins/docker
+    repo: takou/drone-test
+    tags: [ latest ]
+    registry: index.docker.io
+    secrets: [ docker_username, docker_password]
